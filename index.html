@@ -4,15 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'color-primary': '#ABEF5F',
+              }
+            }
+          }
+        }
+      </script>
+      <script
+      src="https://kit.fontawesome.com/bbfc4be646.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        .font-manrope{
+            font-family: "Manrope", sans-serif;
+        }
+        .btn-bg-color{
+            background-color: rgba(171, 239, 95, 0.50);
+        }
+        .debug{
+            border: 3px solid blue;
+        }
+    </style>
 </head>
-<body>
-    <header>
-
+<body class="font-manrope bg-gray-200">
+    <header class="lg:px-32">
+        <div class="flex justify-between items-center">
+            <div class="flex font-bold text-3xl gap-2 items-center">
+                <div class="bg-color-primary rounded-full flex items-center justify-center w-8 h-8"><i class="fa-solid fa-arrow-right text-xl -rotate-45"></i></div>
+                Rinterio
+            </div>
+            <div  class="bg-white rounded-full flex items-center justify-center w-8 h-8 md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="md:flex gap-5 text-gray-500 hidden">
+                <a class="text-black font-bold" href="">Home</a>
+                <a href="">Services</a>
+                <a href="">Portfolio</a>
+                <a href="">Blog</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div class="md:flex justify-center items-center gap-5 hidden">
+                <div  class="bg-white rounded-full flex items-center justify-center w-8 h-8">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="bg-white rounded-full flex items-center justify-center w-8 h-8">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <button class="btn bg-color-primary rounded-full">
+                    Book Consult
+                    <div class="bg-black rounded-full flex items-center justify-center w-5 h-5"><i class="fa-solid fa-arrow-right text-white text-xl -rotate-45"></i></div>
+                </button>
+            </div>
+        </div>
+        <div class="flex flex-col items-center justify-center text-center">
+            <img class="w-100" src="./assets/banner.png" alt="">
+            <h1 class="font-black text-5xl text-black mb-5">A barn house of this design has a <br> striking appearance</h1>
+            <p class="text-gray-500 mb-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <button class="btn btn-bg-color rounded-full text-black">
+                View Details
+                <div class="bg-color-primary rounded-full flex items-center justify-center w-5 h-5"><i class="fa-solid fa-arrow-right text-black text-xl -rotate-45"></i></div>
+            </button>
+        </div>
     </header>
     <main>
-
+        
     </main>
     <footer>
         
