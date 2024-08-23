@@ -32,12 +32,16 @@
         .btn-bg-color{
             background-color: rgba(171, 239, 95, 0.50);
         }
+        .bg-img{
+            background-image: url(/assets/bg.jpg);
+            background-size: cover;
+        }
         .debug{
             border: 3px solid blue;
         }
     </style>
 </head>
-<body class="font-manrope bg-gray-200">
+<body class="font-manrope bg-img">
     <header class="px-5 lg:px-32">
         <div class="flex justify-between items-center">
             <div class="flex font-bold text-3xl gap-2 items-center">
@@ -142,6 +146,32 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="mt-10 px-5 lg:px-32">
+            <div>
+                <div class="text-center">
+                    <button class="btn btn-bg-color rounded-full"><i class="fa-solid fa-arrow-right text-black text-xl"></i>Let's Connect</button>
+                </div>
+                <h1 class="font-black text-5xl text-black mb-5 mt-5 text-center">
+                    Let's Discuss Next Project
+                </h1>
+                <p class="text-gray-500 mb-5 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <form>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+                    <input class="input input-bordered w-full" type="text" placeholder="First Name*" required>
+                    <input class="input input-bordered w-full" type="text" placeholder="Last Name*" required>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+                    <input class="input input-bordered w-full" type="number" placeholder="Phone Number*" required>
+                    <input class="input input-bordered w-full" type="email" placeholder="Email Address*" required>
+                </div>
+                <textarea class="textarea textarea-bordered w-full h-32 mb-5" placeholder="Write your message here"></textarea>
+                <button class="btn bg-color-primary rounded-full w-full mb-5">
+                    Send Mail
+                    <div class="bg-black rounded-full flex items-center justify-center w-5 h-5"><i class="fa-solid fa-arrow-right text-white text-xl -rotate-45"></i></div>
+                </button>
+            </form>
         </section>
     </main>
     <footer>
